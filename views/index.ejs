@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>The total number of students are <%- count %></h1>
+    <table style="border-style: solid;">
+        <tr style="border-style: solid;">
+            <th>Name</th>
+            <th>Roll No</th>
+            <th>AI</th>
+            <th>WAD</th>
+            <th>CNS</th>
+            <th>DSBDA</th>
+        </tr>
+        <% for(var i = 0; i < studentlist.length; i++) { %>
+            <tr style="border-style: solid;">
+                <td><%= studentlist[i].name %></td>
+                <td><%= studentlist[i].rollNo %></td>
+                <td><%= studentlist[i].AI %></td>
+                <td><%= studentlist[i].WAD %></td>
+                <td><%= studentlist[i].CNS %></td>
+                <td><%= studentlist[i].DSBDA %></td>
+            </tr>
+        <% } %>
+    </table>
+</body>
+</html>
